@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>墨色空间 - 徐嘉轩的blog</title>
+    <link rel="stylesheet" href="css/aurora.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 极光背景容器 -->
+    <div class="aurora-background">
+        <div class="aurora-base aurora-one"></div>
+        <div class="aurora-base aurora-two"></div>
+        <div class="aurora-base aurora-three"></div>
+        <div class="aurora-base aurora-four"></div>
+    </div>
+    
+    <!-- 主内容容器 -->
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">墨色空间</a>
+            </div>
+            <div class="navbar-links" id="navbarLinks">
+                <a href="#">首页</a>
+                <a href="#about">关于</a>
+                <a href="#blog">博客</a>
+                <a href="#projects">项目</a>
+                <a href="#contact">联系</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- 英雄区域 -->
+        <header class="hero">
+            <h1>探索技术与创意的边界</h1>
+            <p class="subtitle">在数字世界的深邃中寻找灵感</p>
+            <div class="hero-actions">
+                <a href="#blog" class="btn primary">阅读博客</a>
+                <a href="#projects" class="btn secondary">查看项目</a>
+            </div>
+        </header>
+        
+        <!-- 关于区域 -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="about-text">
+                    <p>我是徐嘉轩，一名热衷于技术与创意表达的学生党开发者。在这个数字时代，我致力于探索技术与艺术的交汇点。</p>
+                    <p>目前就读于定海七中，我开发的项目有：班级白板，智能黑板，智能计时器，随机点名器</p>
+                    <p>我的兴趣包括前端开发、UI/UX设计、数字艺术和新兴技术。通过这个博客，我希望分享我的学习历程、项目经验和思考。</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI设计</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 博客区域 -->
+        <section id="blog" class="section blog-section">
+            <h2 class="section-title">最新文章</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background-image: url('images/post1-thumb.jpg');"></div>
+                    <div class="blog-card-content">
+                        <h3><a href="posts/first-post.html">探索CSS新特性</a></h3>
+                        <p class="blog-meta">2023年5月15日 · 8分钟阅读</p>
+                        <p>深入了解CSS的最新特性，包括容器查询、层叠层和新的颜色空间。</p>
+                        <a href="posts/first-post.html" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background-image: url('images/post2-thumb.jpg');"></div>
+                    <div class="blog-card-content">
+                        <h3><a href="posts/second-post.html">JavaScript性能优化</a></h3>
+                        <p class="blog-meta">2023年4月28日 · 10分钟阅读</p>
+                        <p>提升JavaScript应用性能的实用技巧和最佳实践。</p>
+                        <a href="posts/second-post.html" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background-image: url('images/post3-thumb.jpg');"></div>
+                    <div class="blog-card-content">
+                        <h3><a href="#">响应式设计进阶</a></h3>
+                        <p class="blog-meta">2023年4月10日 · 12分钟阅读</p>
+                        <p>超越媒体查询：现代响应式设计的新思路和技术。</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn outline">查看所有文章</a>
+            </div>
+        </section>
+        
+        <!-- 项目区域 -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">精选项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-network"></i>
+                    </div>
+                    <h3>数据可视化平台</h3>
+                    <p>一个基于React和D3.js的交互式数据可视化工具。</p>
+                    <a href="#" class="project-link">查看详情</a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI智能助手</h3>
+                    <p>使用自然语言处理技术进行对话。</p>
+                    <a href="#" class="project-link">查看详情</a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>移动端UI组件库</h3>
+                    <p>一套现代化的移动端UI组件，支持React Native和Flutter。</p>
+                    <a href="#" class="project-link">查看详情</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 联系区域 -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>如果您对此感兴趣，或者有任何问题想讨论，请随时联系我。</p>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> your.email@example.com
+                        </a>
+                        <a href="https://twitter.com/yourhandle" class="contact-link">
+                            <i class="fab fa-twitter"></i> @yourhandle
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-link">
+                            <i class="fab fa-github"></i> github.com/yourusername
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="您的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="您的留言" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">发送消息</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#">墨色空间</a>
+                    <p>探索技术与创意的边界</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>快速链接</h4>
+                        <a href="#">首页</a>
+                        <a href="#about">关于</a>
+                        <a href="#blog">博客</a>
+                        <a href="#projects">项目</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>社交网络</h4>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 墨色空间. 保留所有权利.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/aurora.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
